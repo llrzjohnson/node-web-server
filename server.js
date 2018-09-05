@@ -44,7 +44,7 @@ hbs.registerHelper("screamIt", text => {
 app.get("/", (req, res) => {
   res.render("home.hbs", {
     pageText: "Welcome to the Home Page",
-    tagLine: "This is the Home Page tag line"
+    tagLine: "This is the Home Page"
   });
 });
 
@@ -52,7 +52,15 @@ app.get("/about", (req, res) => {
   //res.send("<h1>h1hello Express</h1>");
   res.render("about.hbs", {
     pageText: "Welcome to the About Page",
-    tagLine: "This is the About Page tag line"
+    tagLine: "This is the About Page"
+  });
+});
+
+app.get("/projects", (req, res) => {
+  //res.send("<h1>h1hello Express</h1>");
+  res.render("projects.hbs", {
+    pageText: "Welcome to the Projects Page",
+    tagLine: "This is the Projects Page"
   });
 });
 
